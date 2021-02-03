@@ -1,0 +1,37 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "resturant page by using js",
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthykarthick/RESTAURANT-PAGE.git"
+  },
+  "keywords": [
+    "restuarant",
+    "page"
+  ],
+  "author": "karthick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthykarthick/RESTAURANT-PAGE/issues"
+  },
+  "homepage": "https://github.com/karthykarthick/RESTAURANT-PAGE#readme"
+}
