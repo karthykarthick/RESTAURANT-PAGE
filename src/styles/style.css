@@ -30,11 +30,9 @@ section {
   justify-content: center;
   padding: 6%;
   background-image: url(https://thumbs.dreamstime.com/b/seamless-vegetables-pattern-green-background-vegetarian-food-43296007.jpg);
-  height: -webkit-fill-available;
 }
 
 span {
-  width: -webkit-fill-available;
   background-color: white;
   cursor: pointer;
   border: 1px solid green;
