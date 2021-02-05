@@ -4,9 +4,7 @@
   "description": "resturant page by using js",
   "main": "tabs/index.js",
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "css-loader": "^5.0.1",
-    "eslint-config-airbnb-base": "^14.1.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
@@ -14,10 +12,12 @@
     "stylelint-scss": "^3.17.2"
   },
   "devDependencies": {
-    "eslint": "^7.19.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "file-loader": "^6.2.0",
