@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-> [LiveDemoLink]() 
+> [LiveDemoLink](https://raw.githack.com/karthykarthick/RESTAURANT-PAGE/feature-branch/dist/index.html) 
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ Explore the website
 👤 **Karthick Harimoorthy**
 
 - Github: [@karthick](https://github.com/karthykarthick)
-- LinkedIn: [Alexandre Bouhid](https://www.linkedin.com/in/karthick-harimoorthy/)
+- LinkedIn: [Karthick](https://www.linkedin.com/in/karthick-harimoorthy/)
 
 ## 🤝 Contributing
 
