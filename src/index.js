@@ -1,32 +1,57 @@
-// console.log("hello");
-// console.log("world");
+import './styles/style.css';
 
-// document.body.style.backgroundImage = "url('https://images.pexels.com/photos/6331045/pexels-photo-6331045.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')";
+import mainPage from './tabs/main-page';
+import menuPage from './tabs/menu-page';
+import infoPage from './tabs/info-page';
 
-// var div = document.createElement('div');
+function component() {
+  const content = document.getElementById('content');
+  const nav = document.createElement('nav');
+  const home = document.createElement('span');
+  const menu = document.createElement('span');
+  const moreInfo = document.createElement('span');
 
-// function image (){
-//   var img =  document.createElement("img");
-//   img.setAttribute("src","https://images.pexels.com/photos/4255489/pexels-photo-4255489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-//   img.setAttribute("id","restuarant-img");
-//   img.setAttribute("height","500px");
-//   img.setAttribute("width","500px");
-//   img.setAttribute("style","float:left");
-//   document.body.append(img);
-// }
-// image();
-
-
-// function para (){
-//     let text ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-//     var content = document.createElement("p");
-//     // content.setAttribute("style","color:white");
-//     content.setAttribute("style","margin-top:100px");
-//     content.innerText = text;
-//     document.body.append(content);
-//     console.log(content);
-// }
-// para();
+  const addElements = () => {
+    home.textContent = 'HOME';
+    home.classList.add('active');
+    menu.textContent = 'MENU';
+    moreInfo.textContent = 'MORE INFO';
+  };
 
 
+  const appendElements = () => {
+    nav.appendChild(home);
+    nav.appendChild(menu);
+    nav.appendChild(moreInfo);
+    content.appendChild(nav);
+    content.appendChild(mainPage());
+  };
 
+
+  home.addEventListener('click', () => {
+    document.querySelector('.active').classList.remove('active');
+    home.classList.add('active');
+    content.removeChild(content.lastChild);
+    content.appendChild(mainPage());
+  });
+
+  menu.addEventListener('click', () => {
+    document.querySelector('.active').classList.remove('active');
+    menu.classList.add('active');
+    content.removeChild(content.lastChild);
+    content.appendChild(menuPage());
+  });
+  moreInfo.addEventListener('click', () => {
+    document.querySelector('.active').classList.remove('active');
+    moreInfo.classList.add('active');
+    content.removeChild(content.lastChild);
+    content.appendChild(infoPage());
+  });
+
+  addElements();
+  appendElements();
+
+  return content;
+}
+
+document.body.appendChild(component());

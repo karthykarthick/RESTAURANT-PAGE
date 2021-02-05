@@ -2,23 +2,29 @@
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "resturant page by using js",
-  "main": "index.js",
+  "main": "tabs/index.js",
   "dependencies": {
     "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "style-loader": "^2.0.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.17.2"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
