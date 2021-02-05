@@ -1,57 +1,53 @@
-import './styles/style.css';
+import './styles/style.css'
+import mainPage from './tabs/main-page'
+import menuPage from './tabs/menu-page'
+import infoPage from './tabs/info-page'
 
-import mainPage from './tabs/main-page';
-import menuPage from './tabs/menu-page';
-import infoPage from './tabs/info-page';
-
-function component() {
-  const content = document.getElementById('content');
-  const nav = document.createElement('nav');
-  const home = document.createElement('span');
-  const menu = document.createElement('span');
-  const moreInfo = document.createElement('span');
+function component () {
+  const content = document.getElementById('content')
+  const nav = document.createElement('nav')
+  const home = document.createElement('span')
+  const menu = document.createElement('span')
+  const moreInfo = document.createElement('span')
 
   const addElements = () => {
-    home.textContent = 'HOME';
-    home.classList.add('active');
-    menu.textContent = 'MENU';
-    moreInfo.textContent = 'MORE INFO';
-  };
-
+    home.textContent = 'HOME'
+    home.classList.add('active')
+    menu.textContent = 'MENU'
+    moreInfo.textContent = 'MORE INFO'
+  }
 
   const appendElements = () => {
-    nav.appendChild(home);
-    nav.appendChild(menu);
-    nav.appendChild(moreInfo);
-    content.appendChild(nav);
-    content.appendChild(mainPage());
-  };
-
+    nav.appendChild(home)
+    nav.appendChild(menu)
+    nav.appendChild(moreInfo)
+    content.appendChild(nav)
+    content.appendChild(mainPage())
+  }
 
   home.addEventListener('click', () => {
-    document.querySelector('.active').classList.remove('active');
-    home.classList.add('active');
-    content.removeChild(content.lastChild);
-    content.appendChild(mainPage());
-  });
+    document.querySelector('.active').classList.remove('active')
+    home.classList.add('active')
+    content.removeChild(content.lastChild)
+    content.appendChild(mainPage())
+  })
 
   menu.addEventListener('click', () => {
-    document.querySelector('.active').classList.remove('active');
-    menu.classList.add('active');
-    content.removeChild(content.lastChild);
-    content.appendChild(menuPage());
-  });
+    document.querySelector('.active').classList.remove('active')
+    menu.classList.add('active')
+    content.removeChild(content.lastChild)
+    content.appendChild(menuPage())
+  })
   moreInfo.addEventListener('click', () => {
-    document.querySelector('.active').classList.remove('active');
-    moreInfo.classList.add('active');
-    content.removeChild(content.lastChild);
-    content.appendChild(infoPage());
-  });
+    document.querySelector('.active').classList.remove('active')
+    moreInfo.classList.add('active')
+    content.removeChild(content.lastChild)
+    content.appendChild(infoPage())
+  })
 
-  addElements();
-  appendElements();
+  addElements()
+  appendElements()
 
-  return content;
+  return content
 }
-
-document.body.appendChild(component());
+document.body.appendChild(component())
