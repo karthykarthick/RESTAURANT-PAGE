@@ -23,7 +23,6 @@ img {
   padding: 1%;
   border: 4px white solid;
   border-radius: 10px;
-  height: fit-content;
 }
 
 section {
@@ -32,7 +31,6 @@ section {
   padding: 6%;
   background-image: url(https://thumbs.dreamstime.com/b/seamless-vegetables-pattern-green-background-vegetarian-food-43296007.jpg);
   height: -webkit-fill-available;
-  min-height: fit-content;
 }
 
 span {
